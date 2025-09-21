@@ -1,5 +1,5 @@
 import React from 'react'
-import Hotelcard from './Hotelcard';
+import HotelCard from './HotelCard';
 import { roomsDummyData } from '../assets/assets'
 import Title from './Title'
 import { useNavigate } from 'react-router-dom'
@@ -15,7 +15,7 @@ const FeaturedDestination = () => {
       {/* Replace flex-wrap with grid for card layout */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-20 w-full'>
         {roomsDummyData.slice(0, 4).map((room, index) => (
-          <Hotelcard key={room._id} room={room} index={index} />
+          <HotelCard key={room._id} room={room} index={index} />
         ))}
       </div>
       
