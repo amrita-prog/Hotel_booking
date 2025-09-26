@@ -3,7 +3,7 @@ import { roomsDummyData, assets, facilityIcons } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import StarRating from '../components/StarRating';
 
-const CheckBox = ({ label, selected = false, onChange = () => {} }) => (
+const CheckBox = ({ label, selected = false, onChange = () => { } }) => (
   <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
     <input
       type="checkbox"
@@ -14,7 +14,7 @@ const CheckBox = ({ label, selected = false, onChange = () => {} }) => (
   </label>
 );
 
-const RadioButton = ({ label, selected = false, onChange = () => {} }) => (
+const RadioButton = ({ label, selected = false, onChange = () => { } }) => (
   <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
     <input
       type="radio"
@@ -130,7 +130,7 @@ const AllRooms = () => {
                 </div>
 
                 <div className="flex items-center gap-2 mt-2">
-                  <StarRating rating={room.hotel.rating} /> 
+                  <StarRating rating={room.hotel.rating} />
                   <span className="ml-2 text-gray-800 font-medium">200+ reviews</span>
                 </div>
 
